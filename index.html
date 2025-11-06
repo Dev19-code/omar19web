@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab-6</title>
+        <script>
+            function toggleOn() {
+                document.getElementById("light").src = "light-on.jpg";
+            }
+            function toggleOff() {
+                document.getElementById("light").src = "light-off.png";
+            }
+            function bold() {
+                document.getElementById("text").style.fontWeight = "bold";
+            }
+            function italic() {
+                document.getElementById("text").style.fontStyle = "italic";
+            }
+            function large() {
+                document.getElementById("text").style.fontSize = "x-large";
+            }
+            function normal() {
+                document.getElementById("text").style.fontWeight = "normal";
+                document.getElementById("text").style.fontSize = "medium"
+                document.getElementById("text").style.fontStyle = "normal"
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Light Lamp</h1>
+        <img id="light" src="light-off.png" style="width: 200px; height: 200px;">
+        <br><br>
+        <button id="on" onclick="toggleOn()" style="background-color: green; color: white;">switch on</button>
+        <button id="off" onclick="toggleOff()" style="background-color: red; color: yellow;">switch off</button>
+
+        <h1>Changable Text</h1>
+        <p id="text" style="font-size: medium;">Hello welcome to my page, here you will find all you need in one page!</p>
+        <button id="bold" onclick="bold()">Bold</button>
+        <button id="italic" onclick="italic()">Italic</button>
+        <button id="large" onclick="large()">Large</button>
+        <button id="normal" onclick="normal()">Normal</button>
+    </body>
+</html>
